@@ -352,11 +352,11 @@ ul {
   justify-content: center;
 }
 
-.team-socialmedia__item:not(:last-child) {
+.team__socialmedia-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-socialmedia__link {
+.team__socialmedia-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,15 +370,15 @@ ul {
   transition-property: background-color, fill;
 }
 
-.team-socialmedia__link:hover,
-.team-socialmedia__link:focus {
+.team__socialmedia-link:hover,
+.team__socialmedia-link:focus {
   fill: var(--white-text);
   background-color: var(--accent-color);
 }
 
 /* Our clients */
 .clients,
-.team-socialmedia {
+.team__socialmedia {
   fill: var(--icon-color);
   padding-bottom: 30px;
   display: flex;
@@ -391,7 +391,7 @@ ul {
 
 .footer__socialmedia-icon,
 .clients__icon,
-.team-socialmedia__icon {
+.team__socialmedia-icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
