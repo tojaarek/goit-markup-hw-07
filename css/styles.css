@@ -776,7 +776,7 @@ input.modal__form-input {
   bottom: 13px;
 }
 
-.input--height {
+.modal__form-input--padding {
   padding: 12px 12px 12px 42px;
 }
 
@@ -849,7 +849,7 @@ label.terms-checkbox::before {
   align-items: center;
 }
 
-.input--resize {
+.modal__form-input--resize {
   resize: none;
   padding: 12px 16px;
 }
