@@ -52,13 +52,13 @@
   </header>
   <main>
     <!-- Main Header -->
-    <section class="baner">
-      <div class="container container--align">
-        <h1 class="baner__headline">
+    <section class="banner">
+      <div class="container container--banner">
+        <h1 class="banner__headline">
           Efektywne rozwiązania <br />
           dla waszego biznesu
         </h1>
-        <button type="button" class="baner__button baner__button--position" data-modal-open>
+        <button type="button" class="banner__button banner__button--position" data-modal-open>
           Zamów usługę
         </button>
       </div>
@@ -382,7 +382,7 @@
   </footer>
   <div class="container--background is-hidden" data-modal>
     <div class="modal">
-      <button class="modal__button" data-modal-close>
+      <button class="modal__button--close" data-modal-close>
         <svg width="18" height="18">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -398,7 +398,7 @@
                 Imię
                 <input class="modal__form-input modal__form-input--padding" id="service-name" type="text"
                   name="serviceOrderName" pattern="^[a-zA-Z]{3,}$" title="Podaj minimum 3 znaki" required />
-                <svg class="form-icon icon-1" width="12" height="12">
+                <svg class="modal__form-icon modal__form-icon--name" width="12" height="12">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
               </label>
@@ -409,7 +409,7 @@
                 <input class="modal__form-input modal__form-input--padding" id="service-phone" type="tel"
                   name="serviceOrderPhone" pattern="^[0-9]{9}$"
                   title='Dziewięć cyfr w formacie "111111111" bez numeru kierunkowego kraju' required />
-                <svg class="form-icon icon-2" width="13" height="13">
+                <svg class="modal__form-icon modal__form-icon--phone" width="13" height="13">
                   <use href="./images/icons.svg#icon-phone-form"></use>
                 </svg>
               </label>
@@ -419,7 +419,7 @@
                 E-mail
                 <input class="modal__form-input modal__form-input--padding" id="service-email" type="email"
                   name="serviceOrderEmail" required />
-                <svg class="form-icon icon-1" width="15" height="12">
+                <svg class="modal__form-icon modal__form-icon--email" width="15" height="12">
                   <use href="./images/icons.svg#icon-envelope-form"></use>
                 </svg>
               </label>
@@ -431,21 +431,21 @@
                   placeholder="Wprowadź tekst" name="serviceOrderMessage" rows="7"></textarea>
               </label>
             </li>
-            <li class="modal__form-terms">
-              <input class="checkbox" id="service-terms" type="checkbox" name="serviceOrderTerms" value="terms-yes"
-                required />
-              <label class="terms-checkbox" for="service-terms">
-                <svg class="icon-checkbox" width="11" height="8">
+            <li class="modal__form-item--terms">
+              <input class="modal__form-input--checkbox" id="service-terms" type="checkbox" name="serviceOrderTerms"
+                value="terms-yes" required />
+              <label class="modal__form-terms" for="service-terms">
+                <svg class="modal__form-icon--checkbox" width="11" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
                 Oświadczam iż akceptuję
-                <a href="#" class="terms">Regulamin</a> i
-                <a href="#" class="terms">Politykę Prywatności</a>.
+                <a href="#" class="modal__form-link">Regulamin</a> i
+                <a href="#" class="modal__form-link">Politykę Prywatności</a>.
               </label>
             </li>
           </ul>
         </div>
-        <button class="service-order button-send" type="submit">
+        <button class="modal__button modal__button--submit" type="submit">
           Wyślij
         </button>
       </form>
