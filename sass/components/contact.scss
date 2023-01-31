@@ -4,6 +4,17 @@
   &__item:not(:last-child) {
     margin-right: 30px;
   }
+  .contact__link {
+    color: $subtitleColour;
+    fill: $subtitleColour;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+  }
   &__link {
     display: flex;
     align-items: center;
@@ -16,16 +27,5 @@
   }
   &__icon {
     margin-right: 10px;
-  }
-  .contact__link {
-    color: $titleColour;
-    fill: $titleColour;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, fill;
   }
 }

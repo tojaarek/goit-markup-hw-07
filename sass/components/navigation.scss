@@ -5,6 +5,7 @@
     margin-right: 345px;
   }
   &__item {
+    color: $titleColour;
     margin-right: 46px;
     position: relative;
   }
@@ -22,7 +23,7 @@
     &:focus {
       color: $accentColour;
     }
-    &__link--active {
+    &--active {
       color: $accentColour;
       font-weight: 500;
       font-size: 14px;

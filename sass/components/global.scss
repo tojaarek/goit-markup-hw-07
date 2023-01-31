@@ -19,6 +19,19 @@ ul {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+
+  &--header {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+  &--banner {
+    text-align: center;
+  }
+  &--footer {
+    @include flexJustifyCenter;
+  }
 }
 .section {
   padding: 94px 0;
@@ -30,5 +43,8 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+  }
+  &--team {
+    background-color: $filterButtonColour;
   }
 }

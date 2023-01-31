@@ -6,10 +6,10 @@
     color: $accentColour;
   }
   &--header {
-    color: var(--black-text);
+    color: $logoColour;
     margin-right: 93px;
   }
   &--footer {
-    color: var(--white-text);
+    color: $bannerTitleColour;
   }
 }

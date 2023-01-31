@@ -15,7 +15,7 @@
   justify-content: center;
 }
 @mixin footerHeadline {
-  color: var(--white-text);
+  color: $bannerTitleColour;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
