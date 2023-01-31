@@ -1,0 +1,14 @@
+.offer {
+  @include flexJustifyCenter;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__item--position {
+    position: relative;
+  }
+  &__description {
+    width: 370px;
+    height: 70px;
+  }
+}

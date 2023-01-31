@@ -19,31 +19,29 @@
 <body>
   <header class="header">
     <div class="container container--header">
-      <a class="header__logo header__logo--black" href="./index.html"><span
-          class="header__logo--blue">Web</span>Studio</a>
+      <a class="logo logo--header" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
       <nav>
-        <ul class="header__navigation">
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="./index.html">Agencja</a>
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link" href="./index.html">Agencja</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link header__navigation-link--portfolio" href="./portfolio.html">Portfolio</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="./portfolio.html">Portfolio</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-link" href="#">Kontakt</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Kontakt</a>
           </li>
         </ul>
       </nav>
-      <ul class="header__contact">
-        <li class="header__contact-item">
-          <a class="header__contact-link" href="mailto:info@devstudio.com">
-            <svg class="header__contact-icon" width="16" height="12">
+      <ul class="contact">
+        <li class="contact__item">
+          <a class="contact__link" href="mailto:info@devstudio.com">
+            <svg class="contact__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="header__contact-item">
-          <a class="header__contact-link" href="tel:+48111111111"><svg class="header__contact-icon" width="10"
-              height="16">
+        <li class="contact__item">
+          <a class="contact__link" href="tel:+48111111111"><svg class="contact__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>+48 111 111 111</a>
         </li>
@@ -223,61 +221,60 @@
   <footer class="footer">
     <div class="container container--footer">
       <div>
-        <a class="footer__logo footer__logo--white" href="./index.html"><span
-            class="footer__logo--blue">Web</span>Studio</a>
+        <a class="logo logo--footer" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
         <address>
-          <ul class="footer__address">
+          <ul class="address">
             <li>
-              <p class="footer__street">
+              <p class="address__city-street">
                 m. Warszawa, Aleje Jerozolimskie 21
               </p>
             </li>
-            <li class="footer__item">
-              <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+            <li class="address__item">
+              <a class="address__link" href="mailto:info@example.com">info@example.com</a>
             </li>
             <li>
-              <a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
+              <a class="address__link" href="tel:+48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="container--socialmedia">
-        <h3 class="footer__headline">Dołącz do nas</h3>
-        <ul class="footer__socialmedia">
-          <li class="footer__socialmedia-item">
-            <a class="footer__socialmedia-link" href="#">
-              <svg class="footer__socialmedia-icon" width="20" height="20">
+      <div class="socialmedia-box">
+        <h3 class="socialmedia-box__headline">Dołącz do nas</h3>
+        <ul class="socialmedia">
+          <li class="socialmedia__item">
+            <a class="socialmedia__link socialmedia__link--footer" href="#">
+              <svg class="socialmedia__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg></a>
           </li>
-          <li class="footer__socialmedia-item">
-            <a class="footer__socialmedia-link" href="#">
-              <svg class="footer__socialmedia-icon" width="20" height="20">
+          <li class="socialmedia__item">
+            <a class="socialmedia__link socialmedia__link--footer" href="#">
+              <svg class="socialmedia__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg></a>
           </li>
-          <li class="footer__socialmedia-item">
-            <a class="footer__socialmedia-link" href="#">
-              <svg class="footer__socialmedia-icon" width="20" height="20">
+          <li class="socialmedia__item">
+            <a class="socialmedia__link socialmedia__link--footer" href="#">
+              <svg class="socialmedia__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg></a>
           </li>
-          <li class="footer__socialmedia-item">
-            <a class="footer__socialmedia-link" href="#">
-              <svg class="footer__socialmedia-icon" width="20" height="20">
+          <li class="socialmedia__item">
+            <a class="socialmedia__link socialmedia__link--footer" href="#">
+              <svg class="socialmedia__icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg></a>
           </li>
         </ul>
       </div>
-      <form class="footer__form footer__form--position" name="newsletterForm" autocomplete="on">
-        <label class="footer__form-headline footer__form-headline--column" for="newsletter-input">
+      <form class="newsletter newsletter--position" name="newsletterForm" autocomplete="on">
+        <label class="newsletter__headline newsletter__headline--column" for="newsletter-input">
           Zapisz się do newslettera
-          <input class="footer__form-input" id="newsletter-input" type="email" name="newsletterEmail"
+          <input class="newsletter__input" id="newsletter-input" type="email" name="newsletterEmail"
             placeholder="E-mail" required />
         </label>
-        <button class="footer__form-button footer__form-button--margin" type="submit">
-          Zapisz się<svg class="footer__form-icon" width="24" height="24">
+        <button class="newsletter__button newsletter__button--margin" type="submit">
+          Zapisz się<svg class="newsletter__icon" width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
           </svg>
         </button>
