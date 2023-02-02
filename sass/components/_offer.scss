@@ -5,11 +5,12 @@
 .offer {
   @include flexJustifyCenter;
 
-  &__item:not(:last-child) {
+  &__item {
     margin-right: 30px;
-  }
-  &__item--position {
     position: relative;
+  }
+  &__item:last-child {
+    margin-right: 0;
   }
   &__description {
     width: 370px;

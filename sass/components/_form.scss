@@ -1,64 +1,4 @@
-.modal {
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-  background-color: $bannerTitleColour;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  position: fixed;
-  z-index: 2;
-  transition-property: visibility, transform;
-  transform: translateX(-50%) translateY(-50%);
-  transition-duration: 2;
-  visibility: visible;
-  animation-name: modalFrame;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-
-  &__button {
-    width: 30px;
-    height: 30px;
-    background-color: $bannerTitleColour;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 8px;
-    margin-left: 490px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.modal-background {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: fixed;
-  z-index: 1;
-  transition-property: visibility;
-  visibility: visible;
-  display: flex;
-  animation-name: modalOpen;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
-
-.service-order {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +24,7 @@
     color: $subtitleColour;
 
     &:focus-within {
-      .service-order__icon {
+      .form__icon {
         fill: $accentColour;
       }
     }
@@ -103,7 +43,7 @@
   }
 }
 
-.service-order__input {
+.form__input {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -123,8 +63,8 @@
   }
 }
 
-textarea.service-order__input,
-input.service-order__input {
+textarea.form__input,
+input.form__input {
   color: $subtitleColour;
 
   &:focus {
@@ -132,7 +72,7 @@ input.service-order__input {
   }
 }
 
-.service-order__icon {
+.form__icon {
   position: absolute;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,7 +87,7 @@ input.service-order__input {
     bottom: 13px;
   }
 }
-label.service-order__agreement {
+label.form__agreement {
   &::before {
     display: block;
     position: absolute;
@@ -162,10 +102,10 @@ label.service-order__agreement {
   }
 }
 
-input.service-order__checkbox {
+input.form__checkbox {
   appearance: none;
 
-  &:checked + label.service-order__agreement {
+  &:checked + label.form__agreement {
     &::before {
       background-color: $accentColour;
       border: none;
@@ -173,12 +113,12 @@ input.service-order__checkbox {
   }
 }
 
-.service-order__agreement {
+.form__agreement {
   position: relative;
   padding-left: 23px;
 }
 
-.service-order__checkbox-icon {
+.form__checkbox-icon {
   position: absolute;
   cursor: pointer;
   top: 8px;
@@ -186,7 +126,7 @@ input.service-order__checkbox {
   z-index: 1;
 }
 
-.service-order__button {
+.form__button {
   @include mainButton;
 
   &--submit {

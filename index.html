@@ -19,7 +19,7 @@
 <body>
   <header class="header">
     <div class="container container--header">
-      <a class="logo logo--header" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
+      <a class="logo" href="./index.html">Web<span class="logo--header">Studio</span></a>
       <nav>
         <ul class="navigation">
           <li class="navigation__item">
@@ -121,16 +121,16 @@
       <div class="container">
         <h2 class="section__headline">Czym się zajmujemy</h2>
         <ul class="offer">
-          <li class="offer__item offer__item--position">
+          <li class="offer__item">
             <img src="images/whatdowedo-1.jpg" alt="osoba pisząca na komputerze" width="370" height="294" />
             <p class="offer__description">Aplikacje komputerowe</p>
           </li>
-          <li class="offer__item offer__item--position">
+          <li class="offer__item">
             <img src="images/whatdowedo-2.jpg" alt="osoba sprawdzająca powiadomienia na telefonie" width="370"
               height="294" />
             <p class="offer__description">Aplikacje mobilne</p>
           </li>
-          <li class="offer__item offer__item--position">
+          <li class="offer__item">
             <img src="images/whatdowedo-3.jpg" alt="tablet z paletą kolorów" width="370" height="294" />
             <p class="offer__description">Rozwiązania graficzne</p>
           </li>
@@ -317,7 +317,7 @@
   <footer class="footer">
     <div class="container container--footer">
       <div>
-        <a class="logo logo--footer" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
+        <a class="logo" href="./index.html">Web<span class="logo--footer">Studio</span></a>
         <address>
           <ul class="address">
             <li>
@@ -384,65 +384,65 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <form class="service-order" name="serviceOrderForm" autocomplete="on">
-        <div class="service-order__group" role="group" aria-labelledby="service-head">
-          <p class="service-order__headline" id="service-head">
+      <form class="form" name="serviceOrderForm" autocomplete="on">
+        <div class="form__group" role="group" aria-labelledby="service-head">
+          <h3 class="form__headline" id="service-head">
             Zostaw swoje dane w formularzu poniżej
-          </p>
+          </h3>
           <ul>
-            <li class="service-order__item">
+            <li class="form__item">
               <label for="service-name">
                 Imię
-                <input class="service-order__input service-order__input--padding" id="service-name" type="text"
-                  name="serviceOrderName" pattern="^[a-zA-Z]{3,}$" title="Podaj minimum 3 znaki" required />
-                <svg class="service-order__icon service-order__icon--name" width="12" height="12">
+                <input class="form__input form__input--padding" id="service-name" type="text" name="serviceOrderName"
+                  pattern="^[a-zA-Z]{3,}$" title="Podaj minimum 3 znaki" required />
+                <svg class="form__icon form__icon--name" width="12" height="12">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
               </label>
             </li>
-            <li class="service-order__item">
+            <li class="form__item">
               <label for="service-phone">
                 Telefon
-                <input class="service-order__input service-order__input--padding" id="service-phone" type="tel"
-                  name="serviceOrderPhone" pattern="^[0-9]{9}$"
-                  title='Dziewięć cyfr w formacie "111111111" bez numeru kierunkowego kraju' required />
-                <svg class="service-order__icon service-order__icon--phone" width="13" height="13">
+                <input class="form__input form__input--padding" id="service-phone" type="tel" name="serviceOrderPhone"
+                  pattern="^[0-9]{9}$" title='Dziewięć cyfr w formacie "111111111" bez numeru kierunkowego kraju'
+                  required />
+                <svg class="form__icon form__icon--phone" width="13" height="13">
                   <use href="./images/icons.svg#icon-phone-form"></use>
                 </svg>
               </label>
             </li>
-            <li class="service-order__item">
+            <li class="form__item">
               <label for="service-email">
                 E-mail
-                <input class="service-order__input service-order__input--padding" id="service-email" type="email"
-                  name="serviceOrderEmail" required />
-                <svg class="service-order__icon service-order__icon--email" width="15" height="12">
+                <input class="form__input form__input--padding" id="service-email" type="email" name="serviceOrderEmail"
+                  required />
+                <svg class="form__icon form__icon--email" width="15" height="12">
                   <use href="./images/icons.svg#icon-envelope-form"></use>
                 </svg>
               </label>
             </li>
-            <li class="service-order__item">
+            <li class="form__item">
               <label for="service-message">
                 Komentarz
-                <textarea class="service-order__input service-order__input--resize" id="service-message"
-                  placeholder="Wprowadź tekst" name="serviceOrderMessage" rows="7"></textarea>
+                <textarea class="form__input form__input--resize" id="service-message" placeholder="Wprowadź tekst"
+                  name="serviceOrderMessage" rows="7"></textarea>
               </label>
             </li>
-            <li class="service-order__item service-order__item--terms">
-              <input class="service-order__checkbox" id="service-terms" type="checkbox" name="serviceOrderTerms"
+            <li class="form__item form__item--terms">
+              <input class="form__checkbox" id="service-terms" type="checkbox" name="serviceOrderTerms"
                 value="terms-yes" required />
-              <label class="service-order__agreement" for="service-terms">
-                <svg class="service-order__checkbox-icon" width="11" height="8">
+              <label class="form__agreement" for="service-terms">
+                <svg class="form__checkbox-icon" width="11" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
                 Oświadczam iż akceptuję
-                <a href="#" class="service-order__link">Regulamin</a> i
-                <a href="#" class="service-order__link">Politykę Prywatności</a>.
+                <a href="#" class="form__link">Regulamin</a> i
+                <a href="#" class="form__link">Politykę Prywatności</a>.
               </label>
             </li>
           </ul>
         </div>
-        <button class="service-order__button service-order__button--submit" type="submit">
+        <button class="form__button form__button--submit" type="submit">
           Wyślij
         </button>
       </form>
