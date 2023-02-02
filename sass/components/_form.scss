@@ -50,7 +50,11 @@
   display: flex;
   margin-top: 4px;
   outline: none;
+  color: $subtitleColour;
 
+  &:focus {
+    border: 1px solid $accentColour;
+  }
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
@@ -60,15 +64,6 @@
   &--resize {
     resize: none;
     padding: 12px 16px;
-  }
-}
-
-textarea.form__input,
-input.form__input {
-  color: $subtitleColour;
-
-  &:focus {
-    border: 1px solid $accentColour;
   }
 }
 
@@ -87,7 +82,7 @@ input.form__input {
     bottom: 13px;
   }
 }
-label.form__agreement {
+.form__agreement {
   &::before {
     display: block;
     position: absolute;
@@ -102,10 +97,10 @@ label.form__agreement {
   }
 }
 
-input.form__checkbox {
+.form__checkbox {
   appearance: none;
 
-  &:checked + label.form__agreement {
+  &:checked + .form__agreement {
     &::before {
       background-color: $accentColour;
       border: none;

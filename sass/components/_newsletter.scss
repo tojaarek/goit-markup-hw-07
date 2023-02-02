@@ -22,6 +22,11 @@
     padding-left: 16px;
     margin-top: 20px;
     outline: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:focus {
+      border: 1px solid $accentColour;
+    }
   }
   &__button {
     @include mainButton;
@@ -38,13 +43,5 @@
   }
   &__icon {
     margin-left: 24px;
-  }
-}
-
-input.newsletter__input {
-  color: rgba(255, 255, 255, 0.6);
-
-  &:focus {
-    border: 1px solid $accentColour;
   }
 }
