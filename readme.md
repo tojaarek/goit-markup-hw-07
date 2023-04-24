@@ -57,6 +57,6 @@ Live preview: https://tojaarek.github.io/goit-markup-hw-07/
 
 «C1» Selector nesting is used.
 
-«C2» Maximum selector nesting is 2 levels.
+«C2» Maximum selector nesting is 4 levels.
 
 «C3» The concatenation operator (&) is used to describe pseudo-classes and pseudo-elements.
